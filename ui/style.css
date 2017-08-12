@@ -19,4 +19,10 @@ body {
 .img-medium {
     height: 200px;
 }
-
+.container 
+{ background-color: lightblue;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+  font: black;
+}
