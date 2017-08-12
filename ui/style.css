@@ -24,5 +24,11 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   font-size: 18px;
-  font: red;
 }
+   .paragraph {
+    color: brown;
+}
+ 
+   .heading {
+       color:red;
+   }
