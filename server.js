@@ -37,6 +37,8 @@ var articleOne = {
     </div>
     </body>
 </html>`;
+return htmlTemplate;
+
 }
 
 app.get('/', function (req, res) {
@@ -52,7 +54,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/article-one',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'Article-one.html'));
+    res.sendFile(createTemplate(articleOne));
 });
 
 app.get('/article-two',function(req,res){
