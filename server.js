@@ -98,7 +98,7 @@ app.get('/article-three',function(req,res){
 });
 
 var names=[];
-app.get('/submit-name/:name',function(req,res) { // /submit-name?name=xxxx
+app.get('/submit-name',function(req,res) { // /submit-name?name=xxxx
    //Get the names from the request
    var name = req.query.name;
    names.push(name);
