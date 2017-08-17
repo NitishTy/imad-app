@@ -1,3 +1,13 @@
+
+var names=[];
+app.get('/submit-name/:name',function(req,res) { // /submit-name?name=xxxx
+   //Get the names from the request
+   var name = req.query.name;
+   names.push(name);
+   //JSON: JavaScript Object Notation
+   res.send(JSON.stringify(names));
+});
+
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
@@ -51,15 +61,6 @@ return htmltemplate;
 
 }
 
-
-var names=[];
-app.get('/submit-name/:name',function(req,res) { // /submit-name?name=xxxx
-   //Get the names from the request
-   var name = req.query.name;
-   names.push(name);
-   //JSON: JavaScript Object Notation
-   res.send(JSON.stringify(names));
-});
 
 
 app.get('/', function (req, res) {
