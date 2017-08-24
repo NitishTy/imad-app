@@ -25,7 +25,7 @@ submit.onclick = function () {
     console.log(password);
     //Make the request
     request.open('POST','http://nitstyagi0.imad.hasura-app.io/login' ,true);
-    reuest.setRequestHeader('Content-Type','application/json');
+    request.setRequestHeader('Content-Type','application/json');
     request.send(JSON.stringify({username: username, password: password}));
     // Capture the list of names and render it as a list
    
